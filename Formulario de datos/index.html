@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="es">
+	<head>
+		<title>Formulario de datos</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<link rel="stylesheet" href="Assets/css/main.css">
+	</head>
+
+	<body>
+        <center>
+            <h1>Formulario de datos</h1>   
+            <form>
+                <p>
+                    <label for="nombre" required>Nombre</label><br>   
+                    <input type="text" name="nombre">
+                </p>
+                <p>
+                    <label for="apellido" required>Apellido</label><br>   
+                    <input type="text" name="apellido">
+                </p>
+                <p>
+                    <label for="telefono">Teléfono</label><br>   
+                    <input type="text" name="telefono" pattern="[0-9]{9}" title="9 o más caracteres">
+                </p>
+                <p>
+                    <label for="carro">Escoge tu carro para continuar</label><br>  
+                    <select name="carro" id="auto" required>
+                        <option selected hidden>Escoge tu carro</option>
+                        <option value="">Volvo</option>
+                        <option value="">Saab</option>
+                        <option value="">Mercedes</option>
+                        <option value="">Audi</option>
+                    </select>    
+                </p> 
+                <p>
+                    <label for="correo">E-mail</label><br>   
+                    <input type="email" name="correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">>
+                </p>
+                <p>
+                    <label for="pw">Crea tu contraseña</label><br>
+                    <input type="password" name="pw" pattern=".{6,}" title="6 o más caracteres" required>
+                </p>
+                <input type="submit">          
+            </form>
+        </center>
+	</body>
+</html>
